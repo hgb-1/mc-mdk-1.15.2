@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dimension:item/obsidian_sword_green"
+  }
+}

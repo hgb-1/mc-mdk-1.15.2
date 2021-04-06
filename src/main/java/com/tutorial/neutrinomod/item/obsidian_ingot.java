@@ -6,7 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-//黑曜石砖块注册实例
+
 public class obsidian_ingot {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, "dimension");
     public static RegistryObject<Item> obsidianIngot = ITEMS.register("obsidian_ingot", () -> {
@@ -14,7 +14,7 @@ public class obsidian_ingot {
     });
 
     private static class ObsidianIngot extends Item {
-        //无效果
+
 
         //物品分组类别-杂项
         public ObsidianIngot() {
