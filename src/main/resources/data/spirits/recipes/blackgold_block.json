@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "spirits:obsidian_ingot"
+    }
+  },
+  "result": {
+    "item": "spirits:blackgold_block",
+    "count": 3
+  }
+}

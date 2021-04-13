@@ -1,0 +1,13 @@
+{
+  "shiyan": {
+    "category": "block",
+    "subtitle": "shiyan",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "spirits:shiyan",
+        "steam": true
+      }
+    ]
+  }
+}
