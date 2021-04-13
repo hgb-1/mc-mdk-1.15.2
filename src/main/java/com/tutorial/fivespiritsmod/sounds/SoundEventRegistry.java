@@ -4,14 +4,13 @@ import net.minecraft.block.SoundType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 
-
-public class SoundEventRegistry1 extends SoundType{
+public class SoundEventRegistry extends SoundType {
     public static final SoundEvent A_NEW_SOUND = new SoundEvent(new ResourceLocation("spirits", "shiyan"));
-    public static final SoundType A_NEW_SOUND1 = new SoundType(1.0f, 1.0f, A_NEW_SOUND, A_NEW_SOUND, A_NEW_SOUND, A_NEW_SOUND, A_NEW_SOUND);
-    public SoundEventRegistry1() {
+    /*public SoundEventRegistry() {
+        super(volumeIn:音量输入, pitchIn：音高, breakSoundIn：打破声, stepSoundIn：步入声, placeSoundIn：放置声, hitSoundIn：打声音, fallSoundIn：落入声);
+    }*/
+    public SoundEventRegistry() {
         super(1.0f, 1.0f, A_NEW_SOUND, A_NEW_SOUND, A_NEW_SOUND, A_NEW_SOUND, A_NEW_SOUND);
-
     }
 
 }
-//   this.setRegistryName("stool");

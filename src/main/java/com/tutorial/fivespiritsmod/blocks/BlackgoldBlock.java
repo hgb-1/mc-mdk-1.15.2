@@ -11,7 +11,6 @@ public class BlackgoldBlock extends Block {
                 .harvestLevel(3)
                // .sound(SoundType.ANVIL)
                 .hardnessAndResistance(5f)
-                //.sound(new SoundType(1.0f,1.0f,null,null,null,null,null))
                 .sound(new SoundType(1.0f,1.0f, SoundEventRegistry.A_NEW_SOUND, SoundEventRegistry.A_NEW_SOUND, SoundEventRegistry.A_NEW_SOUND, SoundEventRegistry.A_NEW_SOUND,SoundEventRegistry.A_NEW_SOUND))
         );
         this.setRegistryName("blackgold_block");
