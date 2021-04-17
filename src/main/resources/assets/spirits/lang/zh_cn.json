@@ -4,6 +4,9 @@
 
   "block.spirits.blackgold_block":"黑金石块",
   "item.spirits.stool":"粪便",
+
+  "death.attack.pisi": "%s被猪弄死了！",
+
   "item.spirits.obsidian_sword": "青钢剑",
   "item.spirits.obsidian_sword_green":"青钢剑·绿",
   "item.spirits.obsidian_axe":"黑曜斧",
