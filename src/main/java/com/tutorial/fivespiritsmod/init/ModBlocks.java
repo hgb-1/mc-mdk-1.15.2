@@ -2,7 +2,7 @@ package com.tutorial.fivespiritsmod.init;
 
 import com.tutorial.fivespiritsmod.blocks.BlackgoldBlock;
 import com.tutorial.fivespiritsmod.blocks.ore.AmberStoneBlock;
-import jdk.nashorn.internal.ir.Block;
+import net.minecraft.block.Block;
 
 import java.util.ArrayList;
 import java.util.List;

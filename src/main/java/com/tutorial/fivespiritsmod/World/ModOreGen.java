@@ -16,7 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
  矿石生成：https://neutrino.v2mcdev.com/worldgeneration/oregeneration.html
 */
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class OreGen {
+public class ModOreGen {
     @SubscribeEvent
     public static void onSetUpEvent(FMLCommonSetupEvent event) {
         for (Biome biome : ForgeRegistries.BIOMES) {

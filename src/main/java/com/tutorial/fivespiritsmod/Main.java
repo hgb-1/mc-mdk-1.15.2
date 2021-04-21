@@ -1,5 +1,8 @@
 package com.tutorial.fivespiritsmod;
 
+import com.tutorial.fivespiritsmod.World.FeatureInit;
+import com.tutorial.fivespiritsmod.fluids.FluidMercury;
+import com.tutorial.fivespiritsmod.structures.NbtRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -19,9 +22,15 @@ import org.apache.logging.log4j.Logger;
     public Main() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
+        NbtRegistry. FEATURES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FeatureInit.FEATURES.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        FluidMercury.FLUIDS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FluidMercury.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FluidMercury.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
     private void setup(final FMLCommonSetupEvent event)
     {
-       // proxy.init();
+       // proxy.init(); com.tutorial.fivespiritsmod.structures. FeatureRegistry. FEATURES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }

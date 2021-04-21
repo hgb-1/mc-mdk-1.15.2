@@ -1,9 +1,20 @@
 {
+  //物品组
   "itemGroup.spirits":"次元",
   "itemGroup.spirits_1":"次元1",
 
+  //方块
   "block.spirits.blackgold_block":"黑金石块",
+
+  //矿物
+  "block.spirits.amberstone_block": "琥珀原矿",
+
+  //食物
   "item.spirits.stool":"粪便",
+
+  //相关信息
+  "item.spirits.stool-msg": "饥荒者最后的尊严",
+  "stool-msg": "拾荒者",
 
   "death.attack.pisi": "%s被猪弄死了！",
 
