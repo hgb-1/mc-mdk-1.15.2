@@ -1,7 +1,7 @@
 package com.tutorial.fivespiritsmod;
 
-import com.tutorial.fivespiritsmod.World.FeatureInit;
 import com.tutorial.fivespiritsmod.fluids.FluidMercury;
+import com.tutorial.fivespiritsmod.structures.FeatureInit;
 import com.tutorial.fivespiritsmod.structures.NbtRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -19,18 +19,19 @@ import org.apache.logging.log4j.Logger;
 
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
+
     public Main() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
         NbtRegistry. FEATURES.register(FMLJavaModLoadingContext.get().getModEventBus());
         FeatureInit.FEATURES.register(FMLJavaModLoadingContext.get().getModEventBus());
-
+//流体FluidMercury注册
         FluidMercury.FLUIDS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FluidMercury.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FluidMercury.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
     private void setup(final FMLCommonSetupEvent event)
     {
-       // proxy.init(); com.tutorial.fivespiritsmod.structures. FeatureRegistry. FEATURES.register(FMLJavaModLoadingContext.get().getModEventBus());
+       // proxy.init();
     }
 }

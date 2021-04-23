@@ -1,6 +1,6 @@
 package com.tutorial.fivespiritsmod.fluids;
 
-import com.tutorial.fivespiritsmod.util.Modgroup;
+import com.tutorial.fivespiritsmod.init.Modgroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.material.Material;

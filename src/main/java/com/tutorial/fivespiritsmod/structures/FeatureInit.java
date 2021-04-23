@@ -1,4 +1,4 @@
-package com.tutorial.fivespiritsmod.World;
+package com.tutorial.fivespiritsmod.structures;
 
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -24,13 +24,13 @@ public class FeatureInit {
     public static final DeferredRegister<Feature<?>> FEATURES = new DeferredRegister<Feature<?>>(ForgeRegistries.FEATURES, "spirits");
     public static final RegistryObject<HouseStructure> HOUSE = FEATURES.register("house", () ->
             new HouseStructure(NoFeatureConfig::deserialize));
-
     public static IStructurePieceType HOUSE_PIECE = HousePieces.Piece::new;
 
 
     @SubscribeEvent
     public static void registerStructurePieces(RegistryEvent.Register<Feature<?>> event) {
         Registry.register(Registry.STRUCTURE_PIECE, "HOUSE".toLowerCase(Locale.ROOT), HOUSE_PIECE);
+
         for (Biome biome : ForgeRegistries.BIOMES) {
             biome.addStructure(FeatureInit.HOUSE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
             biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES,FeatureInit.HOUSE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));

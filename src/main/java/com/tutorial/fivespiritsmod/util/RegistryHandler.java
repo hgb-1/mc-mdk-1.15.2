@@ -3,6 +3,7 @@ package com.tutorial.fivespiritsmod.util;
 import com.tutorial.fivespiritsmod.fluids.FluidMercury;
 import com.tutorial.fivespiritsmod.init.ModBlocks;
 import com.tutorial.fivespiritsmod.init.ModItems;
+import com.tutorial.fivespiritsmod.init.Modgroup;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
@@ -42,6 +43,8 @@ public class RegistryHandler {
     }
     @SubscribeEvent
     public static void onFluidRegistry(RegistryEvent.Register<Fluid> event){
+
+
     }
 
 

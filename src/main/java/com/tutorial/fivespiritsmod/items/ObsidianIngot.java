@@ -1,6 +1,6 @@
 package com.tutorial.fivespiritsmod.items;
 
-import com.tutorial.fivespiritsmod.util.Modgroup;
+import com.tutorial.fivespiritsmod.init.Modgroup;
 import net.minecraft.item.Item;
 
 public class ObsidianIngot extends Item {
